@@ -1,0 +1,34 @@
+name: PolyZones
+main: com.bukkit.tj007razor.polyzones.PolyZones
+version: 0.1
+website: http://redmine.evosysdev.com/projects/polyzones
+author: tj007razor
+commands:
+    polyzone:
+        permission: polyzone
+        aliases:
+            - pz
+        description: Provides access to PolyZones commands
+        usage: |
+               /<command> | Displays polyzone command help
+               /<command> mk <name> | Makes a zone with the given name
+               /<command> rm <name> | Removes given zone
+               /<command> ls | Lists currently created zones
+               /<command> <zone> allow <permission> [player or group] [player or group] [...] | Grants players/groups a permission in zone
+               /<command> <zone> revoke <permission> [player or group] [player or group] [...] | Revokes players/groups a permission in zone
+               /<command> <zone> <flag> <state> | Set flag's state in zone
+    wand:
+        permission: polyzone.edit
+        aliases:
+        description: Allows zone adding/editing
+        usage: |
+            /<command> | Display wand command help
+            /<command> edit <name> | Sets your wand into edit mode for given zone
+            /<command> reset | Resets current wand selection
+            /<command> cancel | Cancels selection and returns to get info mode without saving
+            /<command> save | Saves zone and sets want back to get info mode
+            /<command> setceil | Sets zone's ceiling to your current height
+            /<command> setceil <ceiling> | Sets zone's ceiling to given height
+            /<command> setfloor | Sets zone's floor to your current height
+            /<command> setfloor <floor> | Sets zone's floor to given height
+           
